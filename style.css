@@ -2,32 +2,33 @@ body{
       background-color: rgb(214, 214, 214);
 }
 .container{
-      width: 250px;
-      height: 400px;
+      width: 450px;
+      height: 500px;
       margin: 80px auto;
       border-radius: 10px;
       background-color: rgb(224, 220, 216);
       box-shadow: 5px 5px 10px rgb(160, 156, 156), -5px -5px 10px white;
 }
 .cal-box{
-      width: 200px;
-      margin: 20px auto;
+      width: 300px;
+      margin: 40px auto;
 }
 #display{
       border: none;
       outline: none;
       color: black;
+      content: 66px;
       text-align: right;
       font-weight: 600;
-      padding: 15px;
-      margin: 30px 0 20px 0;
+      padding:  25px 65px;
+      margin: 40px 0 20px 0;
       background: transparent;
       box-shadow: inset 2px 2px 5px rgb(163, 163, 163) ,inset -5px -5px 10px white;
 }
 .button{
       margin: 15px 0 0 5px;
-      width: 42px;
-      height: 42px;
+      width: 65px;
+      height: 65px;
       border: none;
       outline: none;
       font-size: 18px;
