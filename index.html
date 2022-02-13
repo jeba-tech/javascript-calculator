@@ -45,14 +45,25 @@
                                     <input class="button mathbutton" type="button" value="x"
                                           onclick="calculator.display.value += '*'">
                                     <br>
-                                    <input class="button clearbutton" type="button" value="AC"
-                                          onclick="calculator.display.value = ''">
+
                                     <input class="button" type="button" value="0"
-                                          onclick="calculator.display.value = ''">
+                                          onclick="calculator.display.value += '0'">
+                                    <input class="button mathbutton" type="button" value="."
+                                          onclick="calculator.display.value += '.'">
+
                                     <input class="button mathbutton" type="button" value="="
                                           onclick="calculator.display.value = eval(calculator.display.value)">
                                     <input class="button mathbutton" type="button" value="/"
                                           onclick="calculator.display.value += '/'">
+                                    <br>
+                                    <input class="button clearbutton btn" type="button" value="AC"
+                                          onclick="calculator.display.value = ''">
+                                    <input class="button mathbutton delbtn" type="button" value="DEL"
+                                          onclick="calculator.display.value = calculator.display.value.substr(0,calculator.display.value.length-1) ">
+                                    <input class="button mathbutton" type="button" value="%"
+                                          onclick="calculator.display.value += '%'">
+
+
                               </form>
                         </div>
                   </div>

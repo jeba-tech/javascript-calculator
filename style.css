@@ -1,54 +1,105 @@
 body{
-      background-color: rgb(214, 214, 214);
+      background-color: rgb(63, 63, 66);
 }
 .container{
-      width: 450px;
-      height: 500px;
+      width: 420px;
+      height: 610px;
       margin: 80px auto;
-      border-radius: 10px;
-      background-color: rgb(224, 220, 216);
-      box-shadow: 5px 5px 10px rgb(160, 156, 156), -5px -5px 10px white;
+      border-radius: 40px;
+      margin-bottom: 0;
+      background-color: rgb(37, 37, 37);
+      box-shadow: 5px 5px 10px rgb(0, 0, 0), -2px -2px 10px rgb(104, 104, 104);
 }
 .cal-box{
       width: 300px;
       margin: 40px auto;
 }
 #display{
+      width:273px;
+      height: 70px;
       border: none;
       outline: none;
-      color: black;
-      content: 66px;
+      color: rgb(255, 255, 255);
       text-align: right;
+      font-size: 20px;
       font-weight: 600;
-      padding:  25px 65px;
-      margin: 40px 0 20px 0;
+      padding:  0px 15px;
+      margin: 60px 0 30px 0;
       background: transparent;
-      box-shadow: inset 2px 2px 5px rgb(163, 163, 163) ,inset -5px -5px 10px white;
+      box-shadow: inset 2px 2px 5px rgb(0, 0, 0) ,inset -2px -2px 7px rgb(104, 104, 104);
 }
 .button{
-      margin: 15px 0 0 5px;
+      margin: 15px 0 0 7px;
       width: 65px;
       height: 65px;
       border: none;
       outline: none;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: bold;
       cursor: pointer;
+      color: white;
       border-radius: 8px;
-      background-color: rgb(212, 209, 209);
-      box-shadow: 5px 5px 10px rgb(122, 122, 122),-5px -5px 10px white;
+      background-color: rgb(37, 37, 37);
+      box-shadow: 5px 5px 10px rgb(19, 1, 1),-3px -3px 7px rgb(95, 94, 94);
       display: inline-block;
       
 
 }
 .button:active {
-      box-shadow: inset 1px 1px 2px rgb(180, 172, 172) ,inset 1px 1px 2px rgb(255, 255, 255);
+      box-shadow: inset 1px 1px 2px rgb(138, 133, 133) ,inset 1px 1px 2px rgb(0, 0, 0);
+}
+.btn{
+      width: 101px;
+      height: 65px; 
 }
 .clearbutton{
-      background-color: brown;
-      color: white;
+      background-color: rgb(17, 1, 1);
+      color: rgb(255, 255, 255);
 }
 .mathbutton{
-      background-color: black;
+      background-color: rgb(61, 47, 47);
       color: white;
+}
+.delbtn{
+       width: 101px;
+      height: 65px; 
+      background-color: rgb(53, 53, 53);
+}
+
+/* mobile responsive */
+@media only screen and (max-width:688px){
+      html, body {
+        overflow-x: hidden;
+      }
+      body {
+        position: relative
+      }
+  
+      .container{
+            margin-top: 40px;
+            width: 320px;
+            height: 610px;
+            margin-bottom: 5px;
+            
+      }  
+        
+      #display{
+            width:269px;
+            height: 70px;
+           
+      }
+      .button{
+            margin: 25px 0 0 14px;
+            width: 55px;
+            height: 55px;
+      }
+      .delbtn{
+            width: 91px;
+            height: 55px;
+     }
+     .btn{
+      width: 91px;
+      height: 55px;
+
+      }
 }
